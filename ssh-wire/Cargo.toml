@@ -1,0 +1,28 @@
+[package]
+authors = ["Kevin King <4kevinking@gmail.com>"]
+name = "ssh-wire"
+version = "0.1.0"
+
+[dependencies]
+base64 = "*"
+byteorder = "*"
+libc = "*"
+rand = "*"
+ring = "*"
+serde = "1.0.2"
+serde_derive = "1.0.2"
+untrusted = "*"
+
+[lib]
+crate-type = ["staticlib", "cdylib"]
+name = "sshwire"
+
+[target]
+
+[target."cfg(target_os=\"android\")"]
+
+[target."cfg(target_os=\"android\")".dependencies]
+
+[target."cfg(target_os=\"android\")".dependencies.jni]
+default-features = false
+git = "https://github.com/prevoty/jni-rs"

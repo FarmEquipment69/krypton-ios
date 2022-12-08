@@ -1,0 +1,27 @@
+[submodule "swift-sodium"]
+	path = swift-sodium
+	url  = git@github.com:kryptco/swift-sodium.git
+[submodule "AwesomeCache"]
+	path = AwesomeCache
+	url = git@github.com:KryptCo/AwesomeCache.git
+[submodule "SwiftHTTP"]
+	path = SwiftHTTP
+	url = git@github.com:KryptCo/SwiftHTTP.git
+[submodule "JSON"]
+	path = JSON
+	url = git@github.com:KryptCo/JSON.git
+[submodule "ssh-wire"]
+	path = ssh-wire
+	url = git@github.com:kryptco/ssh-wire
+[submodule "aws-sdk-ios"]
+	path = aws-sdk-ios
+	url = git@github.com:kryptco/aws-sdk-ios.git
+[submodule "swift-pgp"]
+	path = swift-pgp
+	url = git@github.com:kryptco/swift-pgp.git
+[submodule "SigchainTests/sigchain"]
+	path = SigchainTests/sigchain
+	url = git@github.com:kryptco/sigchain.git
+[submodule "openssl-ios/openssl"]
+	path = openssl-ios/openssl
+	url = git@github.com:openssl/openssl.git

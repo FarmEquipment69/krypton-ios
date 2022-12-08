@@ -1,0 +1,29 @@
+language: swift
+xcode_project: Krypton.xcodeproj
+xcode_scheme: Debug
+xcode_destination: platform=iOS Simulator,name=iPhone X
+osx_image: xcode10.2
+git:
+    submodules: false
+# travis work around
+before_install:
+  - sed -i '' -e 's/git@github.com:/https:\/\/github.com\//' .gitmodules
+  - git submodule update --init
+  - sed -i '' -e 's/git@github.com:/https:\/\/github.com\//' SigchainTests/sigchain/.gitmodules
+  - cd SigchainTests/sigchain/ && git submodule update --init && cd ../..
+
+before_script:
+  - curl https://sh.rustup.rs -sSf | sh -s -- -y
+  - export PATH=$PATH:$HOME/.cargo/bin/
+  - rustup target add aarch64-apple-ios
+  - rustup target add armv7-apple-ios
+  - rustup target add armv7s-apple-ios
+  - rustup target add x86_64-apple-ios
+  - rustup target add i386-apple-ios
+  - rustup update
+  - cargo install cargo-lipo
+  - sudo gem install xcpretty
+  - brew install libsodium libtool autoconf automake
+
+script:
+  - travis_wait 60 make check

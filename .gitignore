@@ -1,0 +1,7 @@
+*.xcuserdatad/
+*.xcodeproj/project.xcworkspace/xcshareddata/
+*.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+BUILD
+COMMIT
+AWS_COMMIT
+simulator_links/

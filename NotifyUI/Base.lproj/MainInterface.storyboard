@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1TM-6a-UwO">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Bold</string>
+            <string>AvenirNext-DemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Notification View Controller-->
+        <scene sceneID="itS-YP-HPL">
+            <objects>
+                <viewController id="1TM-6a-UwO" customClass="NotificationViewController" customModule="NotifyUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Yri-BA-wDy"/>
+                        <viewControllerLayoutGuide type="bottom" id="iDE-QQ-7cv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SJt-H4-YDw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="infinite" translatesAutoresizingMaskIntoConstraints="NO" id="Gsw-FO-ceV" userLabel="container">
+                                <rect key="frame" x="0.0" y="53" width="375" height="147"/>
+                                <connections>
+                                    <segue destination="Ke9-tM-byz" kind="embed" id="F1A-rc-i4k"/>
+                                </connections>
+                            </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REQUEST FROM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6rt-hg-WU2">
+                                <rect key="frame" x="156.5" y="10" width="62" height="11"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="8"/>
+                                <color key="textColor" red="0.1529411765" green="0.1529411765" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SPINNY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7LH-kG-tr4">
+                                <rect key="frame" x="153.5" y="18" width="68.5" height="25"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="18"/>
+                                <color key="textColor" red="0.1529411765" green="0.1529411765" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Gsw-FO-ceV" firstAttribute="top" secondItem="7LH-kG-tr4" secondAttribute="bottom" constant="10" id="0pk-Xd-MFH"/>
+                            <constraint firstItem="7LH-kG-tr4" firstAttribute="top" secondItem="6rt-hg-WU2" secondAttribute="firstBaseline" id="5rV-4y-kWi"/>
+                            <constraint firstItem="iDE-QQ-7cv" firstAttribute="top" secondItem="Gsw-FO-ceV" secondAttribute="bottom" id="6hw-El-MX8"/>
+                            <constraint firstItem="7LH-kG-tr4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="SJt-H4-YDw" secondAttribute="leading" constant="10" id="RDK-O9-31g"/>
+                            <constraint firstAttribute="trailing" secondItem="Gsw-FO-ceV" secondAttribute="trailing" id="bKr-I7-wZ5"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="7LH-kG-tr4" secondAttribute="trailing" constant="10" id="jSN-4e-K7O"/>
+                            <constraint firstItem="7LH-kG-tr4" firstAttribute="centerX" secondItem="SJt-H4-YDw" secondAttribute="centerX" id="jgZ-FT-oMg"/>
+                            <constraint firstItem="6rt-hg-WU2" firstAttribute="centerX" secondItem="SJt-H4-YDw" secondAttribute="centerX" id="wNv-Ru-pVW"/>
+                            <constraint firstItem="6rt-hg-WU2" firstAttribute="top" secondItem="Yri-BA-wDy" secondAttribute="bottom" constant="10" id="wvn-O0-cde"/>
+                            <constraint firstItem="Gsw-FO-ceV" firstAttribute="leading" secondItem="SJt-H4-YDw" secondAttribute="leading" id="ycX-7v-cQl"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="200"/>
+                    <connections>
+                        <outlet property="sessionLabel" destination="7LH-kG-tr4" id="RHE-Gk-314"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ktz-ip-9wU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-290.39999999999998" y="77.361319340329842"/>
+        </scene>
+        <!--ApprovalDetail-->
+        <scene sceneID="g28-z6-MMb">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ApprovalDetail" id="Ke9-tM-byz" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OnC-oK-Jsr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="486" y="77"/>
+        </scene>
+    </scenes>
+</document>

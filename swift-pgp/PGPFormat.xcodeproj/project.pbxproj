@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA12EA8C1ECD1EA5001603BF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA12EA8B1ECD1EA5001603BF /* Security.framework */; };
+		FA12EA8F1ECE100C001603BF /* SignatureSubpacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12EA8E1ECE100C001603BF /* SignatureSubpacket.swift */; };
+		FA12EA931ECF5404001603BF /* SignatureSubpacketTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12EA921ECF5404001603BF /* SignatureSubpacketTypes.swift */; };
+		FA12EA991ECF9197001603BF /* SignedPublicKeyIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12EA981ECF9197001603BF /* SignedPublicKeyIdentity.swift */; };
+		FA12EAB71ED000D7001603BF /* pubkey2.txt in Resources */ = {isa = PBXBuildFile; fileRef = FA12EAB61ED000D7001603BF /* pubkey2.txt */; };
+		FA12EAB91ED0283D001603BF /* pubkey3.txt in Resources */ = {isa = PBXBuildFile; fileRef = FA12EAB81ED0283D001603BF /* pubkey3.txt */; };
+		FA12EAC31ED1442D001603BF /* signature.txt in Resources */ = {isa = PBXBuildFile; fileRef = FA12EAC21ED1442D001603BF /* signature.txt */; };
+		FA12EAC51ED14482001603BF /* signed_raw.txt in Resources */ = {isa = PBXBuildFile; fileRef = FA12EAC41ED14482001603BF /* signed_raw.txt */; };
+		FA2151DE1EF9A4520090F398 /* attached_signature.txt in Resources */ = {isa = PBXBuildFile; fileRef = FA2151DD1EF9A4520090F398 /* attached_signature.txt */; };
+		FA2949E11EDD180800A5C70B /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2949E01EDD180800A5C70B /* Message.swift */; };
+		FA5577EE1EE3C93000D1DA99 /* SignatureSubpacketable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5577ED1EE3C93000D1DA99 /* SignatureSubpacketable.swift */; };
+		FAAEAF5B1FBE966A0051E9F2 /* pubkey4.txt in Resources */ = {isa = PBXBuildFile; fileRef = FAAEAF5A1FBE966A0051E9F2 /* pubkey4.txt */; };
+		FACE33BD1EC9E779003EC6C0 /* PGPFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = FACE33BB1EC9E779003EC6C0 /* PGPFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FACE33C81EC9E806003EC6C0 /* Packet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACE33C31EC9E806003EC6C0 /* Packet.swift */; };
+		FACE33C91EC9E806003EC6C0 /* PublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACE33C41EC9E806003EC6C0 /* PublicKey.swift */; };
+		FACE33CA1EC9E806003EC6C0 /* Signature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACE33C51EC9E806003EC6C0 /* Signature.swift */; };
+		FACE33CB1EC9E806003EC6C0 /* UserID.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACE33C61EC9E806003EC6C0 /* UserID.swift */; };
+		FACE33CC1EC9E806003EC6C0 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACE33C71EC9E806003EC6C0 /* Util.swift */; };
+		FACE33CE1EC9E81A003EC6C0 /* PGPFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACE33CD1EC9E81A003EC6C0 /* PGPFormat.swift */; };
+		FACE33D01EC9E88D003EC6C0 /* AsciiArmor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACE33CF1EC9E88D003EC6C0 /* AsciiArmor.swift */; };
+		FAD667631ED2119D00A4430D /* SignedBinaryDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD667621ED2119D00A4430D /* SignedBinaryDocument.swift */; };
+		FAD667671ED22E7800A4430D /* Signable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD667661ED22E7800A4430D /* Signable.swift */; };
+		FADDE2761EF9B3D00049AA67 /* OnePassSignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADDE2751EF9B3D00049AA67 /* OnePassSignature.swift */; };
+		FADDE2781EF9BAED0049AA67 /* LiteralData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADDE2771EF9BAED0049AA67 /* LiteralData.swift */; };
+		FADDE27A1EF9C5450049AA67 /* SignedAttachedBinaryDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADDE2791EF9C5450049AA67 /* SignedAttachedBinaryDocument.swift */; };
+		FADE9B261EE368240053EC08 /* Messagable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE9B251EE368240053EC08 /* Messagable.swift */; };
+		FADE9B281EE381470053EC08 /* Packetable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE9B271EE381470053EC08 /* Packetable.swift */; };
+		FADE9B2C1EE3B64B0053EC08 /* PublicKeyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE9B2B1EE3B64B0053EC08 /* PublicKeyData.swift */; };
+		FAEA70591ECC192D00920AAB /* PGPFormatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEA70581ECC192D00920AAB /* PGPFormatTests.swift */; };
+		FAEA705B1ECC192D00920AAB /* PGPFormat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FACE33B81EC9E779003EC6C0 /* PGPFormat.framework */; };
+		FAEA70621ECC197400920AAB /* pubkey1.txt in Resources */ = {isa = PBXBuildFile; fileRef = FAEA70611ECC197400920AAB /* pubkey1.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAEA705C1ECC192D00920AAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FACE33AF1EC9E779003EC6C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FACE33B71EC9E779003EC6C0;
+			remoteInfo = PGPFormat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA12EA8B1ECD1EA5001603BF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		FA12EA8E1ECE100C001603BF /* SignatureSubpacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignatureSubpacket.swift; sourceTree = "<group>"; };
+		FA12EA921ECF5404001603BF /* SignatureSubpacketTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignatureSubpacketTypes.swift; sourceTree = "<group>"; };
+		FA12EA981ECF9197001603BF /* SignedPublicKeyIdentity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignedPublicKeyIdentity.swift; sourceTree = "<group>"; };
+		FA12EAB61ED000D7001603BF /* pubkey2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pubkey2.txt; sourceTree = "<group>"; };
+		FA12EAB81ED0283D001603BF /* pubkey3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pubkey3.txt; sourceTree = "<group>"; };
+		FA12EAC21ED1442D001603BF /* signature.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = signature.txt; sourceTree = "<group>"; };
+		FA12EAC41ED14482001603BF /* signed_raw.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = signed_raw.txt; sourceTree = "<group>"; };
+		FA2151DD1EF9A4520090F398 /* attached_signature.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = attached_signature.txt; sourceTree = "<group>"; };
+		FA2949E01EDD180800A5C70B /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		FA5577ED1EE3C93000D1DA99 /* SignatureSubpacketable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignatureSubpacketable.swift; sourceTree = "<group>"; };
+		FAAEAF5A1FBE966A0051E9F2 /* pubkey4.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = pubkey4.txt; sourceTree = "<group>"; };
+		FACE33B81EC9E779003EC6C0 /* PGPFormat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PGPFormat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FACE33BB1EC9E779003EC6C0 /* PGPFormat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PGPFormat.h; sourceTree = "<group>"; };
+		FACE33BC1EC9E779003EC6C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FACE33C31EC9E806003EC6C0 /* Packet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Packet.swift; sourceTree = "<group>"; };
+		FACE33C41EC9E806003EC6C0 /* PublicKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicKey.swift; sourceTree = "<group>"; };
+		FACE33C51EC9E806003EC6C0 /* Signature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signature.swift; sourceTree = "<group>"; };
+		FACE33C61EC9E806003EC6C0 /* UserID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserID.swift; sourceTree = "<group>"; };
+		FACE33C71EC9E806003EC6C0 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		FACE33CD1EC9E81A003EC6C0 /* PGPFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PGPFormat.swift; sourceTree = "<group>"; };
+		FACE33CF1EC9E88D003EC6C0 /* AsciiArmor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsciiArmor.swift; sourceTree = "<group>"; };
+		FAD667621ED2119D00A4430D /* SignedBinaryDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignedBinaryDocument.swift; sourceTree = "<group>"; };
+		FAD667661ED22E7800A4430D /* Signable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signable.swift; sourceTree = "<group>"; };
+		FADDE2751EF9B3D00049AA67 /* OnePassSignature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnePassSignature.swift; sourceTree = "<group>"; };
+		FADDE2771EF9BAED0049AA67 /* LiteralData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiteralData.swift; sourceTree = "<group>"; };
+		FADDE2791EF9C5450049AA67 /* SignedAttachedBinaryDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignedAttachedBinaryDocument.swift; sourceTree = "<group>"; };
+		FADE9B251EE368240053EC08 /* Messagable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Messagable.swift; sourceTree = "<group>"; };
+		FADE9B271EE381470053EC08 /* Packetable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Packetable.swift; sourceTree = "<group>"; };
+		FADE9B2B1EE3B64B0053EC08 /* PublicKeyData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicKeyData.swift; sourceTree = "<group>"; };
+		FAEA70561ECC192D00920AAB /* PGPFormatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PGPFormatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAEA70581ECC192D00920AAB /* PGPFormatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGPFormatTests.swift; sourceTree = "<group>"; };
+		FAEA705A1ECC192D00920AAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAEA70611ECC197400920AAB /* pubkey1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pubkey1.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FACE33B41EC9E779003EC6C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA12EA8C1ECD1EA5001603BF /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAEA70531ECC192D00920AAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAEA705B1ECC192D00920AAB /* PGPFormat.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA12EA8A1ECD1EA5001603BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA12EA8B1ECD1EA5001603BF /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA5577EF1EE3CA8B00D1DA99 /* Packets */ = {
+			isa = PBXGroup;
+			children = (
+				FACE33C31EC9E806003EC6C0 /* Packet.swift */,
+				FADE9B271EE381470053EC08 /* Packetable.swift */,
+				FACE33C41EC9E806003EC6C0 /* PublicKey.swift */,
+				FADE9B2B1EE3B64B0053EC08 /* PublicKeyData.swift */,
+				FACE33C61EC9E806003EC6C0 /* UserID.swift */,
+				FACE33C51EC9E806003EC6C0 /* Signature.swift */,
+				FA12EA8E1ECE100C001603BF /* SignatureSubpacket.swift */,
+				FA5577ED1EE3C93000D1DA99 /* SignatureSubpacketable.swift */,
+				FA12EA921ECF5404001603BF /* SignatureSubpacketTypes.swift */,
+				FADDE2751EF9B3D00049AA67 /* OnePassSignature.swift */,
+				FADDE2771EF9BAED0049AA67 /* LiteralData.swift */,
+			);
+			name = Packets;
+			sourceTree = "<group>";
+		};
+		FA5577F01EE3CA9500D1DA99 /* Signable */ = {
+			isa = PBXGroup;
+			children = (
+				FAD667661ED22E7800A4430D /* Signable.swift */,
+				FA12EA981ECF9197001603BF /* SignedPublicKeyIdentity.swift */,
+				FAD667621ED2119D00A4430D /* SignedBinaryDocument.swift */,
+				FADDE2791EF9C5450049AA67 /* SignedAttachedBinaryDocument.swift */,
+			);
+			name = Signable;
+			sourceTree = "<group>";
+		};
+		FA5577F11EE3CAA300D1DA99 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				FA2949E01EDD180800A5C70B /* Message.swift */,
+				FADE9B251EE368240053EC08 /* Messagable.swift */,
+				FACE33CF1EC9E88D003EC6C0 /* AsciiArmor.swift */,
+			);
+			name = Message;
+			sourceTree = "<group>";
+		};
+		FACE33AE1EC9E779003EC6C0 = {
+			isa = PBXGroup;
+			children = (
+				FACE33BA1EC9E779003EC6C0 /* PGPFormat */,
+				FAEA70571ECC192D00920AAB /* PGPFormatTests */,
+				FACE33B91EC9E779003EC6C0 /* Products */,
+				FA12EA8A1ECD1EA5001603BF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FACE33B91EC9E779003EC6C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FACE33B81EC9E779003EC6C0 /* PGPFormat.framework */,
+				FAEA70561ECC192D00920AAB /* PGPFormatTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FACE33BA1EC9E779003EC6C0 /* PGPFormat */ = {
+			isa = PBXGroup;
+			children = (
+				FACE33BC1EC9E779003EC6C0 /* Info.plist */,
+				FACE33BB1EC9E779003EC6C0 /* PGPFormat.h */,
+				FACE33CD1EC9E81A003EC6C0 /* PGPFormat.swift */,
+				FA5577F11EE3CAA300D1DA99 /* Message */,
+				FA5577EF1EE3CA8B00D1DA99 /* Packets */,
+				FA5577F01EE3CA9500D1DA99 /* Signable */,
+				FACE33C71EC9E806003EC6C0 /* Util.swift */,
+			);
+			path = PGPFormat;
+			sourceTree = "<group>";
+		};
+		FAEA70571ECC192D00920AAB /* PGPFormatTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAEA70581ECC192D00920AAB /* PGPFormatTests.swift */,
+				FAEA70611ECC197400920AAB /* pubkey1.txt */,
+				FA12EAB61ED000D7001603BF /* pubkey2.txt */,
+				FA12EAB81ED0283D001603BF /* pubkey3.txt */,
+				FAAEAF5A1FBE966A0051E9F2 /* pubkey4.txt */,
+				FA12EAC21ED1442D001603BF /* signature.txt */,
+				FA2151DD1EF9A4520090F398 /* attached_signature.txt */,
+				FA12EAC41ED14482001603BF /* signed_raw.txt */,
+				FAEA705A1ECC192D00920AAB /* Info.plist */,
+			);
+			path = PGPFormatTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FACE33B51EC9E779003EC6C0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FACE33BD1EC9E779003EC6C0 /* PGPFormat.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		FACE33B71EC9E779003EC6C0 /* PGPFormat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FACE33C01EC9E779003EC6C0 /* Build configuration list for PBXNativeTarget "PGPFormat" */;
+			buildPhases = (
+				FACE33B31EC9E779003EC6C0 /* Sources */,
+				FACE33B41EC9E779003EC6C0 /* Frameworks */,
+				FACE33B51EC9E779003EC6C0 /* Headers */,
+				FACE33B61EC9E779003EC6C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PGPFormat;
+			productName = PGPFormat;
+			productReference = FACE33B81EC9E779003EC6C0 /* PGPFormat.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FAEA70551ECC192D00920AAB /* PGPFormatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAEA705E1ECC192D00920AAB /* Build configuration list for PBXNativeTarget "PGPFormatTests" */;
+			buildPhases = (
+				FAEA70521ECC192D00920AAB /* Sources */,
+				FAEA70531ECC192D00920AAB /* Frameworks */,
+				FAEA70541ECC192D00920AAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAEA705D1ECC192D00920AAB /* PBXTargetDependency */,
+			);
+			name = PGPFormatTests;
+			productName = PGPFormatTests;
+			productReference = FAEA70561ECC192D00920AAB /* PGPFormatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FACE33AF1EC9E779003EC6C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "KryptCo, Inc.";
+				TargetAttributes = {
+					FACE33B71EC9E779003EC6C0 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = W7AMYM5LPN;
+						LastSwiftMigration = 0910;
+						ProvisioningStyle = Automatic;
+					};
+					FAEA70551ECC192D00920AAB = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = W7AMYM5LPN;
+						LastSwiftMigration = 0910;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FACE33B21EC9E779003EC6C0 /* Build configuration list for PBXProject "PGPFormat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FACE33AE1EC9E779003EC6C0;
+			productRefGroup = FACE33B91EC9E779003EC6C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FACE33B71EC9E779003EC6C0 /* PGPFormat */,
+				FAEA70551ECC192D00920AAB /* PGPFormatTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FACE33B61EC9E779003EC6C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAEA70541ECC192D00920AAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAEA70621ECC197400920AAB /* pubkey1.txt in Resources */,
+				FA12EAB71ED000D7001603BF /* pubkey2.txt in Resources */,
+				FA12EAB91ED0283D001603BF /* pubkey3.txt in Resources */,
+				FA12EAC31ED1442D001603BF /* signature.txt in Resources */,
+				FA12EAC51ED14482001603BF /* signed_raw.txt in Resources */,
+				FAAEAF5B1FBE966A0051E9F2 /* pubkey4.txt in Resources */,
+				FA2151DE1EF9A4520090F398 /* attached_signature.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FACE33B31EC9E779003EC6C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FADE9B2C1EE3B64B0053EC08 /* PublicKeyData.swift in Sources */,
+				FA5577EE1EE3C93000D1DA99 /* SignatureSubpacketable.swift in Sources */,
+				FA12EA991ECF9197001603BF /* SignedPublicKeyIdentity.swift in Sources */,
+				FACE33D01EC9E88D003EC6C0 /* AsciiArmor.swift in Sources */,
+				FAD667671ED22E7800A4430D /* Signable.swift in Sources */,
+				FADE9B261EE368240053EC08 /* Messagable.swift in Sources */,
+				FADDE2781EF9BAED0049AA67 /* LiteralData.swift in Sources */,
+				FADE9B281EE381470053EC08 /* Packetable.swift in Sources */,
+				FACE33CA1EC9E806003EC6C0 /* Signature.swift in Sources */,
+				FAD667631ED2119D00A4430D /* SignedBinaryDocument.swift in Sources */,
+				FACE33C91EC9E806003EC6C0 /* PublicKey.swift in Sources */,
+				FA2949E11EDD180800A5C70B /* Message.swift in Sources */,
+				FACE33CE1EC9E81A003EC6C0 /* PGPFormat.swift in Sources */,
+				FADDE27A1EF9C5450049AA67 /* SignedAttachedBinaryDocument.swift in Sources */,
+				FACE33CC1EC9E806003EC6C0 /* Util.swift in Sources */,
+				FACE33C81EC9E806003EC6C0 /* Packet.swift in Sources */,
+				FACE33CB1EC9E806003EC6C0 /* UserID.swift in Sources */,
+				FA12EA931ECF5404001603BF /* SignatureSubpacketTypes.swift in Sources */,
+				FADDE2761EF9B3D00049AA67 /* OnePassSignature.swift in Sources */,
+				FA12EA8F1ECE100C001603BF /* SignatureSubpacket.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAEA70521ECC192D00920AAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAEA70591ECC192D00920AAB /* PGPFormatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAEA705D1ECC192D00920AAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FACE33B71EC9E779003EC6C0 /* PGPFormat */;
+			targetProxy = FAEA705C1ECC192D00920AAB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FACE33BE1EC9E779003EC6C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FACE33BF1EC9E779003EC6C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FACE33C11EC9E779003EC6C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = W7AMYM5LPN;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PGPFormat/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.krypt.PGPFormat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		FACE33C21EC9E779003EC6C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = W7AMYM5LPN;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PGPFormat/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.krypt.PGPFormat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		FAEA705F1ECC192D00920AAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = W7AMYM5LPN;
+				INFOPLIST_FILE = PGPFormatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.krypt.PGPFormatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		FAEA70601ECC192D00920AAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = W7AMYM5LPN;
+				INFOPLIST_FILE = PGPFormatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.krypt.PGPFormatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FACE33B21EC9E779003EC6C0 /* Build configuration list for PBXProject "PGPFormat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FACE33BE1EC9E779003EC6C0 /* Debug */,
+				FACE33BF1EC9E779003EC6C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FACE33C01EC9E779003EC6C0 /* Build configuration list for PBXNativeTarget "PGPFormat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FACE33C11EC9E779003EC6C0 /* Debug */,
+				FACE33C21EC9E779003EC6C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAEA705E1ECC192D00920AAB /* Build configuration list for PBXNativeTarget "PGPFormatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAEA705F1ECC192D00920AAB /* Debug */,
+				FAEA70601ECC192D00920AAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FACE33AF1EC9E779003EC6C0 /* Project object */;
+}
